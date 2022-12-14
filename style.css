@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ffd234;
+    min-height: 400px;
+    padding: 20px;
+    color: #000000;
+    font-family: verdana;
+}
+
+#board,
+#playerCards {
+    display: block;
+    clear: both;
+    width: 100%;
+    min-height: 240px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 150px;
+    height: 214px;
+    margin: 10px;
+    float: left;
+    background-color: white;
+    background-image: url('https://www.101computing.net/wp/wp-content/uploads/deck.png');
+    background-position-x: 0px;
+    background-position-y: center;
+    background-repeat: none;
+    background-position: middle center;
+    border: 1px #555555 solid;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 3px 0px #000000;
+    box-shadow: 2px 2px 3px 0px #000000;
+}
+
+hr {
+    margin: 12px;
+    display: block;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#blackjack</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>#Blackjack</h1>
+    <hr>
+    <h2>Dealer:</h2>
+    <div id="board" style="display: block;">
+        <div id="card1"></div>
+        <div id="card2"></div>
+    </div>
+    <hr />
+    <h2>Player's cards:</h2>
+    <div id="playerCards">
+        <div id="playerCard1"></div>
+        <div id="playerCard2"></div>
+        <div id="playerCard3"></div>
+        <div id="playerCard4"></div>
+    </div>
+    <div>
+        <button onclick={stand(this)}>Stand</button>
+        <button id="deal" onclick={dealPlayerCard(this)}>Deal</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
