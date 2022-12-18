@@ -1,22 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background: #ffd234;
     min-height: 400px;
     padding: 20px;
     color: #000000;
     font-family: verdana;
 }
 
-#board,
+/* Styling to split the screen */
+.split {
+    top: 0;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.right {
+    right: 0;
+    width: 60%;
+    background-color: #ffdb5c;
+}
+
+.left {
+    left: 0;
+    width: 40%;
+    background-color: #46515a;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }  
+
+/* Jumbo text for the header Blackjack */
+.jumbo-text{
+    font-family:sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f6f6f6;
+}
+
+/* Styling for the left side - board */
+.board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* Styling for the cards */
+#dealerCards,
 #playerCards {
-    display: block;
-    clear: both;
-    width: 100%;
+    font-family:sans-serif;
     min-height: 240px;
+}
+
+h1{
+    color: #31383E;
 }
 
 .card {
@@ -37,12 +87,8 @@ body {
     box-shadow: 2px 2px 3px 0px #000000;
 }
 
-hr {
-    margin: 12px;
-    display: block;
-    width: 100%;
-}
 
+/* Styling for the buttons */
 button {
     cursor: pointer;
     width: 200px;
@@ -50,5 +96,8 @@ button {
     text-align: center;
     margin: 20px;
     border-radius: 5px;
-
+    background-color: #46515a;
+    color: #ffdb5c;
+    font-size: large;
+    font-family: sans-serif;
 }

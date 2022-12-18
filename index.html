@@ -7,28 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#blackjack</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cute-alert-master/style.css">
 </head>
 
 <body>
-    <h1>#Blackjack</h1>
-    <hr>
-    <h2>Dealer:</h2>
-    <div id="board" style="display: block;">
-        <div id="card1"></div>
-        <div id="card2"></div>
+    <div class="split left">
+        <header class="centered jumbo-text">#blackjack</header>
     </div>
-    <hr />
-    <h2>Player's cards:</h2>
-    <div id="playerCards">
-        <div id="playerCard1"></div>
-        <div id="playerCard2"></div>
-        <div id="playerCard3"></div>
-        <div id="playerCard4"></div>
+    <!-- <hr> -->
+    <div class="split right">
+        <div class="board">
+            <h1>Dealer:</h1>
+            <div id="dealerCards">
+                <div id="card1"></div>
+                <div id="card2"></div>
+            </div>
+            <!-- <hr /> -->
+            <h1>Player:</h1>
+            <div id="playerCards">
+                <div id="playerCard1"></div>
+                <div id="playerCard2"></div>
+                <div id="playerCard3"></div>
+                <div id="playerCard4"></div>
+            </div>
+            <div>
+                <button onclick={stand(this)}>Stand</button>
+                <button id="deal" onclick={dealPlayerCard(this)}>Deal a Card</button>
+            </div>
+        </div>
     </div>
-    <div>
-        <button onclick={stand(this)}>Stand</button>
-        <button id="deal" onclick={dealPlayerCard(this)}>Deal</button>
-    </div>
+    <script src="./cute-alert-master/cute-alert.js"></script>
     <script src="./script.js"></script>
 </body>
 
