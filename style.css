@@ -33,19 +33,40 @@ body {
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
   }  
 
 /* Jumbo text for the header Blackjack */
 .jumbo-text{
     font-family:sans-serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #f6f6f6;
+}
+
+.small-text{
+    font-family:sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffdb5c;
+    text-align: left;
+}
+
+li{
+    margin: 10px;
+}
+
+.sublist{
+    font-family:sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #ffdb5c;
+    text-align: left;
 }
 
 /* Styling for the left side - board */
@@ -63,10 +84,6 @@ body {
 #playerCards {
     font-family:sans-serif;
     min-height: 240px;
-}
-
-h1{
-    color: #31383E;
 }
 
 .card {

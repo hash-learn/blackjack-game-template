@@ -12,7 +12,46 @@
 
 <body>
     <div class="split left">
-        <header class="centered jumbo-text">#blackjack</header>
+        <header class="centered jumbo-text">
+            <h1>#blackjack</h1>
+            <div class="small-text">
+                <h2>Rules !!!</h2>
+                <ol>
+                    <li>
+                        <!-- Rule 1 -->
+                    </li>
+                    <li>
+                        <!-- Rule 2 -->
+                        <ul class="sublist">
+                            <li>
+                                <!-- sub-rule 1 -->
+                            </li>
+                            <li> 
+                                <!-- sub-rule 2 -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- Rule 3 -->
+                        <ul class="sublist">
+                            <li> 
+                                <!-- sub-rule 1 -->
+                            </li>
+                            <li> 
+                                <!-- sub-rule 2 -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- Rule 4 -->
+                    </li>
+                    <li>
+                        <!-- Rule 5 -->
+                    </li>
+                </ol>
+            </div>
+        </header>
+        <!--  -->
     </div>
     <!-- <hr> -->
     <div class="split right">
@@ -32,7 +71,7 @@
             </div>
             <div>
                 <button onclick={stand(this)}>Stand</button>
-                <button id="deal" onclick={dealPlayerCard(this)}>Deal a Card</button>
+                <button id="deal" onclick={hit(this)}>Hit</button>
             </div>
         </div>
     </div>

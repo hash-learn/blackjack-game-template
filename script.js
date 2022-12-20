@@ -199,7 +199,7 @@ let extraCnt = 0;
 /**
  * function which deals extra playercards - Max. 2 cards
  */
-function dealPlayerCard() {
+function hit() {
     let dealButton = document.getElementById("deal");
 
     // Dealing the extra cards that the player requests
